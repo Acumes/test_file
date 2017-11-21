@@ -80,6 +80,10 @@ law		n.法律;法令，法规
 claw	n.爪,钳  v用力抓
 lawful	adj.合法的。法定的。法律许可的
 lawsuit	n.诉讼；诉讼案件
+形近詞
+flaw	n.瑕疵；裂纹；缺点； v.使破裂；使有缺陷
+lawyer	n.律师，法学家 > attorney  律师	> tear 撕裂
+legislation		n.法律，法规
 	
 
 
