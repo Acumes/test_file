@@ -162,11 +162,52 @@ enlarge v.扩大，放大，扩充
 augment	扩大
 
 词组
-at large 一般，全体地，普遍的
+at large 一般，全体地，普遍的 逍遥法外; 在逃
+
+wanted at large 逍遥法外; 在逃;
+
+近义词
+bulky	adj.庞大的，体积大的
+outsize adj.特大的
+huge	adj.庞大的，体积大的
 
 
+mark	v.做标记，指出，标明
+		n.痕迹，斑点，污点
+形近词
+market	n.市场，行情,v.推销，营销
+marketplace  n.市集，商场，市场
+marked	adj.显著的，明显的。有记号的
+形近词
+marketer	n.市场商人，市场营销人员
+remark v.评论，谈到，n.评论
+remarkable    adj.卓越的，非凡的
+landmark  n.里程碑，地标，转折点
+		 adj.有重大意义的
 
-	
-	
+近义词
+blot	n.污点
+spot  n.点。斑点
+stain	n.污迹，污渍，玷污
+symbol	n.象征，标志
+
+system  n.系统，体制
+形近词
+systematic	adj.有系统的，系统化的
+systematically	adv.系统地，有条理地
+近义词
+regime	n.政权，政体
+organization	n.组织，机构
+structure	n.结构，构造。组织
+
+stress	v.强调，着重
+		n.压力，强调
+词组
+stressed-out  因心里紧张而被压垮的
+近义词
+highlight	v.强调，突出
+emphasize	v.强调
+strain	v.使不堪承受的；使紧张，拉伤
+		n.压力，负担
 
 
