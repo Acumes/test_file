@@ -219,6 +219,73 @@ statistical  adj.  统计的；统计学的
 2007 年阅读 Text 2
 Superhigh scores like vos Savant’s are no longer possible, because scoring is now based on a statistical population distribution among age peers. 
 
+<<<<<<< HEAD
+		
+Unit 2
+
+peer	n.同龄人，同等地位的人
+		vt.仔细看，费力地看
+peer at 盯着什么地方看
+gaze at 凝视，注释
+	unbelievable  难以置信的
+stare at 盯，凝视
+	unpolite  无礼的，粗鲁的
+glare at 长久地怒视，瞪着
+	glow  发光
+同义词
+contemporary	n.同代人
+	temporary   短暂的，临时的
+issue	v.发行，发表，发布
+		n.问题，(报刊的)期/号/版次
+形近詞
+tissue	n.组织，薄的纱织品，面巾纸
+	fuss  大惊小怪
+	make a fuss of ...  对...大惊小怪的
+
+claim	v.要求，声称，断言
+		n.要求，声称，索赔
+形近词
+proclaim	v.宣布，声明，公布
+disclaim	v.放弃，拒绝承认，否认
+acclaim		v.欢呼，称赞，宣布
+	ass att all   -> to
+词组
+lay claim to  对....提出所有权要求
+同义词
+allege		v.断言，指称，声称
+contend		v.声称，主张
+	tend to do sth 倾向于做某事
+	incline to  趋向，倾向
+assert		v.声称，断言
+patent		v.取得...的专利权
+			adj.专利的
+			n.专利，专利权
+词组
+intellectual property	知识产权
+court		n.法院，法庭
+形近词
+courteous	adj.有礼貌的
+courtesy	承蒙，谦恭有礼，礼貌
+	seat  席位，座位
+	empathy	 同感，共鸣
+line		n.排线，线
+形近词
+guideline	指导方针
+deadline	最后期限
+baseline	基线，底线
+airline		航线，航空公司
+coastline	海岸线
+headline	大标题，头版头条新闻
+discipline	纪律，学科，训练
+形近词
+outline		轮廓，大纲，概要
+firendliness	友善，亲密
+loneliness	孤独
+on-line 线上的
+off-line	离线的
+linen	亚麻布
+lineage		血统，家系，世系
+=======
 statement  n. ( 正式的口头或书面 ) 陈述，声明；   ( 意见或观点的 ) 表现，表达
 2012 年阅读 text 2
 A string of accidents, including the partial collapse of a cooling tower in 2007 and the discovery of an underground pipe system leakage, raised serious questions about both Vermont Yankee’s safety and Entergy’s management especially after the company made misleading statements about the pipe.
@@ -286,3 +353,4 @@ Because representative government presupposes an informed citizenry, the report 
 stressed-out：因心理紧张而被压垮的
 2008年阅读 Text 1
 In several of the studies, when stressed-out female rats had their ovaries (the female reproductive organs) removed, their chemical responses became equal to those of the males.
+>>>>>>> aaa71400294fc35a0e7d008b426ed39693995a65
