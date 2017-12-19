@@ -31,6 +31,7 @@ public class PoiTest2Update {
 		// XSSFSheet 代表 Excel 文件中的一张表格
 		// 我们通过 getSheetAt(0) 指定表格索引来获取对应表格
 		// 注意表格索引从 0 开始！
+//		XSSFSheet sheet =workbook.createSheet("故障");
 		XSSFSheet sheet = workbook.getSheetAt(0);
 		// 开始循环表格数据,表格的行索引从 0 开始
 
@@ -84,7 +85,7 @@ public class PoiTest2Update {
 //		newSalaryCell.s(6000);
 		// 将最新的 Excel 文件写入到文件输出流中，更新文件信息！
 		XSSFDrawing patriarch = sheet.createDrawingPatriarch();
-		XSSFClientAnchor anchor = new XSSFClientAnchor(200, 200, 200, 200,(short) 4, 4, (short) 5, 5);
+		XSSFClientAnchor anchor = new XSSFClientAnchor(0, 0, 255, 255,(short) 3, 4, (short) 5, 5);
 		XSSFClientAnchor anchor1 = new XSSFClientAnchor(0, 0, 255, 255,(short) 1, 10, (short) 2, 11);
 		anchor.setAnchorType(3); 
 		//插入图片    
@@ -93,19 +94,21 @@ public class PoiTest2Update {
 		// 先把读进来的图片放到一个ByteArrayOutputStream中，以便产生ByteArray
 		ByteArrayOutputStream byteArrayOut = new ByteArrayOutputStream();
 		ByteArrayOutputStream byteArrayOut1 = new ByteArrayOutputStream();
-		bufferImg = ImageIO.read(new File("g:/icon.png"));
-		bufferImg1 = ImageIO.read(new File("g:/2.jpg"));
+		bufferImg = ImageIO.read(new File("g:/4.jpg"));
+		bufferImg1 = ImageIO.read(new File("g:/echarts.png"));
 		ImageIO.write(bufferImg, "jpg", byteArrayOut);
-		ImageIO.write(bufferImg1, "jpg", byteArrayOut1);
-        
-        patriarch.createPicture(anchor, workbook.addPicture(byteArrayOut.toByteArray(), XSSFWorkbook.PICTURE_TYPE_JPEG)).resize();
-        patriarch.createPicture(anchor1, workbook.addPicture(byteArrayOut1.toByteArray(), XSSFWorkbook.PICTURE_TYPE_JPEG));
+		ImageIO.write(bufferImg1, "png", byteArrayOut1);
+        double a = 1.5;
+        double c = 4.4;
+        double b = 1;
+        patriarch.createPicture(anchor, workbook.addPicture(byteArrayOut.toByteArray(), XSSFWorkbook.PICTURE_TYPE_JPEG)).resize(a,b);
+        patriarch.createPicture(anchor1, workbook.addPicture(byteArrayOut1.toByteArray(), XSSFWorkbook.PICTURE_TYPE_JPEG)).resize(c,0.95);
 		FileOutputStream excelFileOutPutStream = new FileOutputStream("G:/ts1.xlsx");
 		workbook.write(excelFileOutPutStream);
 		 // 执行 flush 操作， 将缓存区内的信息更新到文件上
 		excelFileOutPutStream.flush();
+//		excelFileOutPutStream
 		// 使用后，及时关闭这个输出流对象， 好习惯，再强调一遍！
-
 		excelFileOutPutStream.close();
 	}
 }
