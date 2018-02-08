@@ -1,0 +1,123 @@
+##create procedure greetWorld() select concat(@greeting,'World');
+#Set @greeting='Hello';
+#CALL greetWorld();
+#CREATE PROCEDURE p1() SET @last_proc='p1';
+#CREATE PROCEDURE p2() SELECT CONCAT('Last procedure was ', @last_proc);
+#CALL p1();
+#CALL p2();
+#select name  from mysql.proc where db='seckill';
+#select routine_name from information_schema.routines where routine_schema='seckill';
+
+#show create procedure seckill.p1
+
+-- drop procedure p1;
+-- 
+-- DELIMITER //
+-- 	CREATE PROCEDURE proc()
+-- 		BEGIN
+-- 			DECLARE x1 VARCHAR(5) DEFAULT 'outer';
+-- 				BEGIN
+-- 					DECLARE x1 VARCHAR(5) DEFAULT 'inner';
+-- 					SELECT x1;
+-- 				END;
+-- 			SELECT x1;
+-- 		END;
+-- 	//
+-- DELIMITER;
+
+#CALL proc();
+
+
+#drop procedure of exists proc3;
+-- delimiter //
+-- 	create procedure proc3(IN parameter int)
+-- 		BEGIN
+-- 			DECLARE var int;
+-- 			SET var= parameter + 1;
+-- 			IF var=0 THEN	
+-- 				INSERT INTO t values (17);
+-- 			END IF ;
+-- 			IF parameter =0 THEN
+-- 				update t SET s1=s1+1;
+-- 			ELSE
+-- 				update t SET s1=s1+2;
+-- 			END IF;
+-- 		END;
+-- 	//
+-- DELIMITER;
+#CALL proc3(-1)
+-- DELIMITER //
+-- 	CREATE PROCEDURE proc4(IN parameter int)
+-- 		BEGIN
+-- 			DECLARE var int;
+-- 			SET var = parameter + 1;
+-- 			CASE var		
+-- 				WHEN 0 THEN
+-- 					INSERT INTO t values(17);
+-- 				WHEN 1 THEN
+-- 					INSERT INTO t values(18);
+-- 				ELSE
+-- 					INSERT INTO t values(19);
+-- 			END CASE;
+-- 		END;
+-- 	//
+-- DELIMITER;
+
+-- CALL proc4(9);
+-- DELIMITER //
+-- 	CREATE PROCEDURE proc5()
+-- 		BEGIN
+-- 			DECLARE var int;
+-- 			SET var = 0;
+-- 			WHILE var<6 DO
+-- 				INSERT INTO t values(var);
+-- 				SET var = var+1;
+-- 			END WHILE;
+-- 		END;
+-- 	//
+-- DELIMITER;
+
+-- call proc5()
+
+-- DELIMITER //
+-- 	CREATE PROCEDURE proc6()
+-- 		BEGIN
+-- 			DECLARE v int;
+-- 			SET v = 0;
+-- 			LOOP_LABLE:LOOP
+-- 				INSERT INTO t values(v);
+-- 				SET v=v+1;
+-- 				IF v >= 5 THEN
+-- 					LEAVE LOOP_LABLE;
+-- 				END IF;
+-- 			END LOOP;
+-- 		END;
+-- 	//
+-- DELIMITER;
+
+-- call proc6();
+
+
+#ITERATE
+-- DELIMITER //
+-- 	CREATE PROCEDURE proc7()
+-- 		BEGIN
+-- 			DECLARE v int ;
+-- 			SET v=0;
+-- 			LOOP_LABLE:LOOP
+-- 				IF v=3 THEN
+-- 					SET v = v+ 1;
+-- 						ITERATE LOOP_LABLE;
+-- 				END IF;
+-- 			END LOOP;
+-- 		END;
+-- 	//
+-- DELIMITER;
+-- CALL proc7();
+
+
+
+
+
+
+
